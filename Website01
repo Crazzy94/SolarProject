@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sito di una sola pagina</title>
+  <style>
+    /* Reset base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    /* Barra di navigazione */
+    nav {
+      background-color: #000;
+      padding: 15px 20px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+
+    nav li {
+      margin-right: 20px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* Sezione principale */
+    .main-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px;
+    }
+
+    .main-content .image,
+    .main-content .text {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .main-content img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* Responsive: in schermi piccoli, impila le colonne */
+    @media (max-width: 768px) {
+      .main-content {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Barra di navigazione -->
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Servizi</a></li>
+      <li><a href="#">Contatti</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contenuto principale -->
+  <div class="main-content">
+    <!-- Immagine a sinistra -->
+    <div class="image">
+      <img src="https://via.placeholder.com/400x300" alt="Immagine di esempio">
+    </div>
+    <!-- Testo a destra -->
+    <div class="text">
+      <h1>Benvenuti sul mio sito</h1>
+      <p>
+        Questo è un esempio di sito di una sola pagina. In questa sezione trovi del testo esplicativo sulla destra e un'immagine di esempio sulla sinistra.
+        Puoi personalizzare questo contenuto a tuo piacimento.
+      </p>
+    </div>
+  </div>
+
+</body>
+</html>
